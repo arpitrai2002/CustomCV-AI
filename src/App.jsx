@@ -22,7 +22,6 @@ function App() {
     <Header/>
     <Outlet/>
     <Toaster/>
-    <Home/>
     </>
   )
 }
