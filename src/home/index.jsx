@@ -1,6 +1,7 @@
 import Header from '@/components/custom/Header';
 import { TypeAnimation } from 'react-type-animation';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -23,8 +24,8 @@ function Home() {
               Effortlessly Craft a Standout Resume with Our AI-Powered Builder
             </p>
             <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-              <a
-                href="/dashboard"
+              <Link
+                to={'/dashboard'}
                 className="inline-flex justify-center items-center py-3 px-6 text-base font-medium text-center text-white bg-indigo-600 rounded-lg shadow-lg hover:bg-indigo-500 hover:shadow-indigo-600/50 transform hover:scale-105 transition-transform duration-300 focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-900"
               >
                 Get Started
@@ -40,7 +41,7 @@ function Home() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
